@@ -1,0 +1,192 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #14213d;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: white;
+    padding: 56px 24px;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    opacity: 0.85;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    margin: 0 0 14px;
+    font-size: 2.5rem;
+}
+
+.hero-text {
+    max-width: 760px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.secondary-btn {
+    background: white;
+    color: #0f172a;
+}
+
+.secondary-btn:hover {
+    background: #e2e8f0;
+}
+
+.page-shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+}
+
+.panel {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.metric-grid,
+.card-grid,
+.timeline-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.metric-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.timeline-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.metric-card,
+.info-card,
+.timeline-card {
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.metric-card h3,
+.info-card h3,
+.timeline-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1d4ed8;
+}
+
+.metric-card p,
+.info-card p,
+.timeline-card p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.quiz-question {
+    background: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.quiz-question h3 {
+    margin-top: 0;
+    color: #1d4ed8;
+}
+
+.quiz-option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 12px;
+    background: white;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quiz-option:hover {
+    background: #eff6ff;
+}
+
+.quiz-results {
+    margin-top: 18px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 18px;
+    line-height: 1.7;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+}

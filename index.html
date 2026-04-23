@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Breach Analysis Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Cybersecurity Research Dashboard</p>
+            <h1>Cyber Breach Analysis Dashboard</h1>
+            <p class="hero-text">
+                An interactive case-study experience built from breach research, lessons learned, and defensive planning analysis.
+            </p>
+            <div class="hero-actions">
+                <button class="primary-btn" onclick="scrollToSection('timeline')">View Timeline</button>
+                <button class="secondary-btn" onclick="scrollToSection('quiz')">Take Knowledge Check</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="panel" id="overview">
+            <h2>Executive Summary</h2>
+            <p id="summaryText"></p>
+            <div class="metric-grid" id="metricGrid"></div>
+        </section>
+
+        <section class="panel" id="timeline">
+            <h2>Incident Timeline</h2>
+            <div id="timelineGrid" class="timeline-grid"></div>
+        </section>
+
+        <section class="panel" id="attack-analysis">
+            <h2>Attack Analysis</h2>
+            <div id="attackGrid" class="card-grid"></div>
+        </section>
+
+        <section class="panel" id="impact">
+            <h2>Business Impact</h2>
+            <div id="impactGrid" class="card-grid"></div>
+        </section>
+
+        <section class="panel" id="lessons">
+            <h2>Lessons Learned</h2>
+            <div id="lessonsGrid" class="card-grid"></div>
+        </section>
+
+        <section class="panel" id="defenses">
+            <h2>Defensive Recommendations</h2>
+            <div id="defenseGrid" class="card-grid"></div>
+        </section>
+
+        <section class="panel" id="quiz">
+            <h2>Knowledge Check</h2>
+            <div id="quizContainer"></div>
+            <button class="primary-btn" id="submitQuiz">Submit Answers</button>
+            <div id="quizResults" class="quiz-results hidden"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Cyber Breach Analysis Dashboard • Portfolio Research Experience</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
