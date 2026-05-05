@@ -1,55 +1,50 @@
-﻿# Cyber Breach Analysis Dashboard
+﻿# SecOps Breach Containment And Impact Analysis System
 
-## Overview
+An enterprise-style cloud security operations dashboard that analyzes suspicious breach signals across AWS, Azure, and GCP. The system ingests JSON and CSV event data, calculates breach risk, generates alerts, writes structured logs, and exports executive reports for incident response.
 
-Cyber Breach Analysis Dashboard is a browser-based portfolio project that transforms cybersecurity breach research into an interactive case-study experience.
+## Why This System Matters
 
-This project is positioned as a recruiter-ready and client-facing security education dashboard. It presents breach analysis, timeline thinking, business impact, lessons learned, defensive recommendations, and a short knowledge check in a format that is easier to explore than a static research document alone.
+Without this system, a company can miss the first signs of account takeover, public data exposure, disabled logging, or large data transfers. That delay can turn a small cloud incident into customer data loss, downtime, regulatory reporting failure, and expensive emergency response.
 
-## Real-World Business Use Case
+## Real-World Scenario
 
-This project maps to practical cybersecurity education and research workflows used by:
+A cloud support and security operations team receives alerts from CloudTrail, GuardDuty, Azure Defender, Azure Identity Protection, and Google Security Command Center. The raw events are noisy. Engineers need one command center that scores risk, prioritizes alerts, identifies affected accounts, and produces incident-ready reports.
 
-- Security Awareness Teams
-- Security Analysts
-- Governance, Risk, And Compliance Teams
-- Technical Researchers
-- Students Building Cybersecurity Portfolios
+## Core Capabilities
 
-A company or training team may need to answer questions such as:
+- Cloud breach signal analysis across AWS, Azure, and GCP
+- Risk classification using HIGH, MEDIUM, and LOW categories
+- Alert generation with response SLA targets
+- Structured JSON logging
+- JSON and CSV ingest with event normalization
+- Executive TXT report
+- Machine-readable JSON report
+- CSV event report for audit review
+- Flask dashboard with command-center UI
+- API-style endpoints for summary, alerts, events, and full report
 
-- How can breach research be presented more clearly to non-technical audiences?
-- How can lessons learned be turned into a training experience?
-- How can defensive recommendations be organized in a more engaging format?
-- How can case-study work be transformed into a product-style portfolio piece?
+## Folder Structure
 
-This dashboard is useful as a security awareness resource, educational case-study viewer, and portfolio example of turning research into an interactive experience.
-
-## Key Features
-
-- Executive Summary Section
-- Breach Timeline View
-- Attack Analysis Cards
-- Business Impact Section
-- Lessons Learned Section
-- Defensive Recommendations Section
-- Knowledge Check Quiz
-- Clean Browser-Based UI
-
-## Repository Contents
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-- `Hyadw_1dQT-Kd9hj9ei2SQ_11b0eb0555de41119bf22eca96113ff1_Applied-Project_Attack-Case-Study.pdf`
-
-## How To Run The Dashboard
-
-Open the project folder and launch the HTML file in a browser.
-
-### PowerShell Example
-
-```powershell
-Start-Process .\index.html
+```text
+SecOps-Breach-Containment-And-Impact-Analysis-System/
+├── app.py
+├── run_analysis.py
+├── requirements.txt
+├── README.md
+├── breach_analyzer/
+│   ├── __init__.py
+│   ├── analyzer.py
+│   ├── data_loader.py
+│   ├── logger_config.py
+│   └── report_writer.py
+├── data/
+│   ├── sample_breach_events.json
+│   └── sample_breach_events.csv
+├── logs/
+├── reports/
+├── static/
+│   └── css/
+│       └── styles.css
+└── templates/
+    └── dashboard.html
 
